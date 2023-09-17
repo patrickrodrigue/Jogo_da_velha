@@ -1,0 +1,105 @@
+body {
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.game {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    border: 5px solid rgba(37, 37, 37, 0);
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.game>div {
+    border: 3px solid rgba(255, 255, 255, 0.527);
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: rgb(0, 0, 0);
+}
+
+.players h2 {
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -1em;
+    left: 38%;
+}
+
+.players p {
+    position: relative;
+    top: -3.5em;
+    display: flex;
+    flex-wrap: nowrap;
+    display: inline-block;
+    width: 1em;
+    margin-left: 4.9em;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.players {
+    position: absolute;
+    left: 50%;
+    height: 4.5em;
+    top: 3.1em;
+    transform: translate(-50%, 50%);
+    width: 300px;
+}
+
+.player {
+    display: flex;
+    flex-wrap: nowrap;
+    display: inline-block;
+    width: 2em;
+    height: 1.5em;
+    margin-left: 5em;
+    left: -2em;
+    position: relative;
+    top: -2em;
+}
+
+.score {
+    position: relative;
+    left: 2em;
+}
+
+.Resultado {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    top: 5em;
+    width: 45em;
+    justify-content: center;
+    display: flex;
+}
+
+.Resultado h1 {
+    color: rgb(17, 16, 16);
+    font-size: 2.3em;
+    background-color: white;
+}
+
+#empate-img {
+    position: relative;
+    left: 1%;
+    transform: translate(-50%, 50%);
+    top: -15em;
+    width: 19em;
+    height: 19em;
+}
